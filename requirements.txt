@@ -1,8 +1,8 @@
 langchain-community
 faiss-cpu
-langchain_google_genai
+langchain-google-genai
 pypdf
-langchain 
+langchain
 langchain-pinecone
 weaviate-client
 langchain-weaviate
@@ -15,4 +15,3 @@ langchain-groq
 yfinance
 duckduckgo-search
 langchain-openai
-
