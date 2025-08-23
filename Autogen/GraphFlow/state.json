@@ -1,0 +1,188 @@
+{
+    "type": "TeamState",
+    "version": "1.0.0",
+    "agent_states": {
+        "Writer": {
+            "type": "ChatAgentContainerState",
+            "version": "1.0.0",
+            "agent_state": {
+                "type": "AssistantAgentState",
+                "version": "1.0.0",
+                "llm_context": {
+                    "messages": [
+                        {
+                            "content": "Write a good poem about India in less than 30 words.",
+                            "source": "user",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "Ancient soul, vibrant land,\nHistory whispers, hand in hand.\nSpices, wisdom, spirits bright,\nIndia's dawn, eternal light.",
+                            "thought": null,
+                            "source": "Writer",
+                            "type": "AssistantMessage"
+                        },
+                        {
+                            "content": "This is an excellent poem!\n\nHere's why it works so well:\n\n*   **Conciseness:** At just 17 words, it perfectly meets the \"less than 30 words\" requirement while still conveying a powerful message.\n*   **Evocative Imagery:** Phrases like \"Ancient soul, vibrant land,\" \"History whispers,\" and \"eternal light\" paint a vivid picture of India's essence.\n*   **Core Themes:** It touches upon key aspects of India: its ancient heritage, vibrant present, rich culture (spices, wisdom), and spiritual depth.\n*   **Flow and Rhyme:** The simple AABB rhyme scheme (land/hand, bright/light) gives it a pleasant rhythm and makes it memorable.\n*   **Impact:** For such a short piece, it leaves a strong, positive impression of India's timeless beauty and spirit.\n\nGreat job!",
+                            "source": "Reviewer",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "Write a good poem about India in less than 30 words.",
+                            "source": "user",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "Vibrant hues, a timeless art,\nAncient wisdom, in every heart.\nSacred rivers, mountains tall,\nIndia's spirit beckons all.",
+                            "thought": null,
+                            "source": "Writer",
+                            "type": "AssistantMessage"
+                        }
+                    ]
+                }
+            },
+            "message_buffer": [
+                {
+                    "id": "3926be15-ae96-425e-950e-3cb1a9a51c1b",
+                    "source": "Reviewer",
+                    "models_usage": {
+                        "prompt_tokens": 303,
+                        "completion_tokens": 193
+                    },
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:03:05.750040Z",
+                    "content": "This is another excellent poem!\n\nHere's a breakdown of why it works so well:\n\n*   **Conciseness:** At 21 words, it comfortably meets the \"less than 30 words\" requirement while packing a lot of meaning.\n*   **Rich Imagery:** Phrases like \"Vibrant hues,\" \"timeless art,\" \"Sacred rivers,\" and \"mountains tall\" paint a vivid and evocative picture of India.\n*   **Thematic Depth:** It successfully touches upon several key aspects of India: its artistic heritage, deep-rooted wisdom, diverse geography, and welcoming spiritual essence.\n*   **Flow and Rhyme:** The AABB rhyme scheme (art/heart, tall/all) gives it a pleasing musicality and makes it feel complete.\n*   **Impact:** It effectively conveys a sense of India's allure and diverse beauty in a very compact form.\n\nGreat job once again!",
+                    "type": "TextMessage"
+                }
+            ]
+        },
+        "Reviewer": {
+            "type": "ChatAgentContainerState",
+            "version": "1.0.0",
+            "agent_state": {
+                "type": "AssistantAgentState",
+                "version": "1.0.0",
+                "llm_context": {
+                    "messages": [
+                        {
+                            "content": "Write a good poem about India in less than 30 words.",
+                            "source": "user",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "Ancient soul, vibrant land,\nHistory whispers, hand in hand.\nSpices, wisdom, spirits bright,\nIndia's dawn, eternal light.",
+                            "source": "Writer",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "This is an excellent poem!\n\nHere's why it works so well:\n\n*   **Conciseness:** At just 17 words, it perfectly meets the \"less than 30 words\" requirement while still conveying a powerful message.\n*   **Evocative Imagery:** Phrases like \"Ancient soul, vibrant land,\" \"History whispers,\" and \"eternal light\" paint a vivid picture of India's essence.\n*   **Core Themes:** It touches upon key aspects of India: its ancient heritage, vibrant present, rich culture (spices, wisdom), and spiritual depth.\n*   **Flow and Rhyme:** The simple AABB rhyme scheme (land/hand, bright/light) gives it a pleasant rhythm and makes it memorable.\n*   **Impact:** For such a short piece, it leaves a strong, positive impression of India's timeless beauty and spirit.\n\nGreat job!",
+                            "thought": null,
+                            "source": "Reviewer",
+                            "type": "AssistantMessage"
+                        },
+                        {
+                            "content": "Write a good poem about India in less than 30 words.",
+                            "source": "user",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "Vibrant hues, a timeless art,\nAncient wisdom, in every heart.\nSacred rivers, mountains tall,\nIndia's spirit beckons all.",
+                            "source": "Writer",
+                            "type": "UserMessage"
+                        },
+                        {
+                            "content": "This is another excellent poem!\n\nHere's a breakdown of why it works so well:\n\n*   **Conciseness:** At 21 words, it comfortably meets the \"less than 30 words\" requirement while packing a lot of meaning.\n*   **Rich Imagery:** Phrases like \"Vibrant hues,\" \"timeless art,\" \"Sacred rivers,\" and \"mountains tall\" paint a vivid and evocative picture of India.\n*   **Thematic Depth:** It successfully touches upon several key aspects of India: its artistic heritage, deep-rooted wisdom, diverse geography, and welcoming spiritual essence.\n*   **Flow and Rhyme:** The AABB rhyme scheme (art/heart, tall/all) gives it a pleasing musicality and makes it feel complete.\n*   **Impact:** It effectively conveys a sense of India's allure and diverse beauty in a very compact form.\n\nGreat job once again!",
+                            "thought": null,
+                            "source": "Reviewer",
+                            "type": "AssistantMessage"
+                        }
+                    ]
+                }
+            },
+            "message_buffer": []
+        },
+        "GraphManager": {
+            "message_thread": [
+                {
+                    "id": "9ef5494e-d337-4ac5-b497-5eb01af8eff6",
+                    "source": "user",
+                    "models_usage": null,
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:01:08.698860Z",
+                    "content": "Write a good poem about India in less than 30 words.",
+                    "type": "TextMessage"
+                },
+                {
+                    "id": "767aceb6-ea4a-496e-bfef-8dbac5d145b1",
+                    "source": "Writer",
+                    "models_usage": {
+                        "prompt_tokens": 34,
+                        "completion_tokens": 32
+                    },
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:01:15.754193Z",
+                    "content": "Ancient soul, vibrant land,\nHistory whispers, hand in hand.\nSpices, wisdom, spirits bright,\nIndia's dawn, eternal light.",
+                    "type": "TextMessage"
+                },
+                {
+                    "id": "9e86a9b9-54e7-4913-82a7-b1f731144cc4",
+                    "source": "Reviewer",
+                    "models_usage": {
+                        "prompt_tokens": 65,
+                        "completion_tokens": 188
+                    },
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:01:19.473946Z",
+                    "content": "This is an excellent poem!\n\nHere's why it works so well:\n\n*   **Conciseness:** At just 17 words, it perfectly meets the \"less than 30 words\" requirement while still conveying a powerful message.\n*   **Evocative Imagery:** Phrases like \"Ancient soul, vibrant land,\" \"History whispers,\" and \"eternal light\" paint a vivid picture of India's essence.\n*   **Core Themes:** It touches upon key aspects of India: its ancient heritage, vibrant present, rich culture (spices, wisdom), and spiritual depth.\n*   **Flow and Rhyme:** The simple AABB rhyme scheme (land/hand, bright/light) gives it a pleasant rhythm and makes it memorable.\n*   **Impact:** For such a short piece, it leaves a strong, positive impression of India's timeless beauty and spirit.\n\nGreat job!",
+                    "type": "TextMessage"
+                },
+                {
+                    "id": "d2e013bc-066c-45b2-b3ef-70946a63e4b2",
+                    "source": "user",
+                    "models_usage": null,
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:02:55.250117Z",
+                    "content": "Write a good poem about India in less than 30 words.",
+                    "type": "TextMessage"
+                },
+                {
+                    "id": "0dfb6f80-1c35-41f0-b8a1-f4edcedabd1c",
+                    "source": "Writer",
+                    "models_usage": {
+                        "prompt_tokens": 271,
+                        "completion_tokens": 33
+                    },
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:03:02.381969Z",
+                    "content": "Vibrant hues, a timeless art,\nAncient wisdom, in every heart.\nSacred rivers, mountains tall,\nIndia's spirit beckons all.",
+                    "type": "TextMessage"
+                },
+                {
+                    "id": "3926be15-ae96-425e-950e-3cb1a9a51c1b",
+                    "source": "Reviewer",
+                    "models_usage": {
+                        "prompt_tokens": 303,
+                        "completion_tokens": 193
+                    },
+                    "metadata": {},
+                    "created_at": "2025-08-21T12:03:05.750040Z",
+                    "content": "This is another excellent poem!\n\nHere's a breakdown of why it works so well:\n\n*   **Conciseness:** At 21 words, it comfortably meets the \"less than 30 words\" requirement while packing a lot of meaning.\n*   **Rich Imagery:** Phrases like \"Vibrant hues,\" \"timeless art,\" \"Sacred rivers,\" and \"mountains tall\" paint a vivid and evocative picture of India.\n*   **Thematic Depth:** It successfully touches upon several key aspects of India: its artistic heritage, deep-rooted wisdom, diverse geography, and welcoming spiritual essence.\n*   **Flow and Rhyme:** The AABB rhyme scheme (art/heart, tall/all) gives it a pleasing musicality and makes it feel complete.\n*   **Impact:** It effectively conveys a sense of India's allure and diverse beauty in a very compact form.\n\nGreat job once again!",
+                    "type": "TextMessage"
+                }
+            ],
+            "current_turn": 0,
+            "remaining": {
+                "Reviewer": {
+                    "Reviewer": 1
+                }
+            },
+            "enqueued_any": {
+                "Reviewer": {
+                    "Reviewer": false
+                }
+            },
+            "ready": [
+                "Writer"
+            ]
+        }
+    }
+}
