@@ -17,6 +17,7 @@ adk
 
 # VS Code settings
 .vscode/
+.vs
 
 # macOS & Windows system files
 .DS_Store
