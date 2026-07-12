@@ -1,17 +1,15 @@
 import asyncio
 from autogen_agentchat.agents import AssistantAgent
 from autogen_ext.models.openai import OpenAIChatCompletionClient
-from autogen_core.tools import FunctionTool
 import os
 from dotenv import load_dotenv
-from autogen_ext.tools.http import HttpTool
 load_dotenv()
-from langchain_community.utilities import GoogleSerperAPIWrapper
+from langchain_community.utilities.google_serper import GoogleSerperAPIWrapper
 
 api_key = os.getenv("GOOGLE_API_KEY")
 
-model_client=OpenAIChatCompletionClient(model="gemini-2.0-flash",api_key=api_key)
-os.environ['SERPER_API_KEY']='03efe53bf8044f01c84e9c0d43a252fc74dc64a7'
+model_client=OpenAIChatCompletionClient(model="gemini-2.5-flash",api_key=api_key)
+SERPER_API_KEY = os.getenv("SERPER_API_KEY")
 
 search_tool_wrapper = GoogleSerperAPIWrapper(type='search')
 
@@ -34,13 +32,13 @@ search_agent = AssistantAgent(
     model_client=model_client,
     tools=[search_web],
     description="An agent that can search the web for information.",
-    system_message="You are a helpful assistant that can search the web for information using the search_web tool. If not give answer by ur own",
+    system_message="You are a helpful assistant that can search the web tool for information using the search_web tool. If not give answer by ur own",
     reflect_on_tool_use=True,
 )
 
 async def run_serper_search():
     """Run the search agent with a sample query."""
-    query = "ipl" 
+    query = "what is GDP of india" 
     print(f"Querying: {query}")
     
     
